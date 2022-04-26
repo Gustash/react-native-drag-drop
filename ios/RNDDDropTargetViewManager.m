@@ -1,15 +1,16 @@
+#import "RNDDDropTargetView.h"
 #import <React/RCTViewManager.h>
 
-@interface ReactNativeDragDropViewManager : RCTViewManager
+@interface RNDDDropTargetViewManager : RCTViewManager
 @end
 
-@implementation ReactNativeDragDropViewManager
+@implementation RNDDDropTargetViewManager
 
-RCT_EXPORT_MODULE(ReactNativeDragDropView)
+RCT_EXPORT_MODULE(RNDDDropTargetView)
 
 - (UIView *)view
 {
-  return [[UIView alloc] init];
+  return [[RNDDDropTargetView alloc] init];
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(color, NSString, UIView)

@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
-import { ReactNativeDragDropView } from '@gustash/react-native-drag-drop';
+import {StyleSheet, View} from 'react-native';
+import {DropTargetView} from '@gustash/react-native-drag-drop';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ReactNativeDragDropViewManager color="#32a852" style={styles.box} />
+      <DropTargetView color="#32a852" style={styles.box} />
     </View>
   );
 }
