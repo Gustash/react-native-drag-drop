@@ -13,6 +13,8 @@ RCT_EXPORT_MODULE(RNDDDropTargetView)
   return [[RNDDDropTargetView alloc] init];
 }
 
+RCT_EXPORT_VIEW_PROPERTY(onDrop, RCTBubblingEventBlock)
+
 RCT_CUSTOM_VIEW_PROPERTY(color, NSString, UIView)
 {
   [view setBackgroundColor:[self hexStringToColor:json]];

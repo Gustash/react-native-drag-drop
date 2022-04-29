@@ -9,8 +9,12 @@
 #define RNDDDropTargetView_h
 
 #import <UIKit/UIKit.h>
+#import <React/RCTComponent.h>
 
 @interface RNDDDropTargetView : UIView
+
+@property (nonatomic, copy) RCTBubblingEventBlock onDrop;
+
 @end
 
 #endif /* RNDDDropTargetView_h */

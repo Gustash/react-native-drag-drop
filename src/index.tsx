@@ -1,1 +1,6 @@
-export { default as DropTargetView } from './DropTargetView';
+export {
+  default as DropTargetView,
+  DropEvent,
+  DropItem,
+  ReactNativeDropViewProps,
+} from './DropTargetView';
